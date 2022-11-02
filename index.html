@@ -2,21 +2,24 @@
 <html lang="en">
 <head>
     <title>Document</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1 id="title">
        Zewdie and Anthony Survey Form
     </h1>
-    <p id="description">hank you for taking the time to help us improve the platform</p>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
     <form id="survey-form">
         <label id="name-label" for="name">Name</label><br>
-        <input type = "text"id="name" placeholder="Enter your name"><br>
+        <input type = "text"id="name" class ="form-control"placeholder="Enter your name"><br>
         <label id="email-label" for="email">Email</label><br>
-        <input type = "email"id="email" name = "email"placeholder="Enter your email"/><br>
-        <label id="label-number"for>Age(optional)</label><br>
-        <input type="number" id="number" min="10" max="99"  placeholder="Age"/><br>
+        <input type = "email"id="email" class ="form-control"name = "email"placeholder="Enter your email"/><br>
+        <label id="label-number"for>Age<small>(optional)</small></label><br>
+        <input type="number" id="number" class ="form-control"min="10" max="99"  placeholder="Age"/><br>
         <label>Which option best describes your current role?</label><br>
-        <select id="dropdown ">
+        <select id="dropdown "class ="form-control">
             <option>Select current role</option>
             <option>Student</option>
             <option>Full Time Job</option>
@@ -29,7 +32,7 @@
         <input type="radio" name="choose" value="Maybe">Maybe<br>
         <input type="radio" name="choose" value="Not sure">Not sure<br>
         <label for="dropdown">What is your favorite feature of freeCodeCamp?</label><br>
-        <select id ="Programming">
+        <select id ="Programming" class ="form-control">
             <option>Select an Option</option>
             <option>Challenges</option>
             <option>Projects</option>
@@ -51,11 +54,8 @@
         <input type="Checkbox">Additional Courses<br>  
 
         <label>Any comments or suggestions?</label>
-        <textarea placeholder="Enter your comment here" rows = "5"cols = "50"></textarea><br>
-
-        <input type="Submit" value="Submit" id = "submit">
-
-
+        <textarea placeholder="Enter your comment here" class ="form-control"></textarea><br>
+        <input type="Submit" class ="btn btn-success form-control"value="Submit" id = "submit">
     </form>
 </body>
 </html>

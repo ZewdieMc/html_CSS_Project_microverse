@@ -1,0 +1,20 @@
+body{
+    margin:auto
+}
+form{
+    background-color: rgba(48, 26, 26, 0.84);
+    width:50%;
+    padding:10px;
+    margin: 0 auto;
+    color: white;
+}
+#title, #description{
+    width: 70%;
+    margin: 20px auto;
+    text-align:center
+
+}
+#description{
+    font-style: italic;
+    text-align: center;
+}
