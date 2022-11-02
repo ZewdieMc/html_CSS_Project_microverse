@@ -4,6 +4,30 @@
     <title>Document</title>
 </head>
 <body>
-    Hello World, we are software developers!
+    <h1 id="title">
+       Zewdie and Anthony Survey Form
+    </h1>
+    <p id="description">hank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+        <label id="name-label" for="name">Name</label><br>
+        <input type = "text"id="name" placeholder="Enter your name"><br>
+        <label id="email-label" for="email">Email</label><br>
+        <input type = "email"id="email" name = "email"placeholder="Enter your email"/><br>
+        <label id="label-number"for>Age(optional)</label><br>
+        <input type="number" id="number" min="10" max="99"  placeholder="Age"/><br>
+        <label>Which option best describes your current role?</label><br>
+        <select id="dropdown ">
+            <option>Select current role</option>
+            <option>Student</option>
+            <option>Full Time Job</option>
+            <option>Full time Learner</option>
+            <option>Other</option>
+        </select>
+        <br>
+        <label>Would you recommend freeCodeCamp to a friend?</label><br>
+        <input type="radio" name="choose" value="Definitely">Definitely<br>
+        <input type="radio" name="choose" value="Maybe">Maybe<br>
+        <input type="radio" name="choose" value="Not sure">Not sure<br>
+    </form>
 </body>
 </html>
